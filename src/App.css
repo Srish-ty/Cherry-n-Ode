@@ -5,7 +5,7 @@
   display: flex; flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #111530;
+  background-color: #111530; color: rgb(149, 123, 139);
 }
 
 

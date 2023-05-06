@@ -1,3 +1,10 @@
 .slider-cont{
-    border: 1px solid blue;
+    border: 0px solid blue;
+    width: 800px;
+    padding: 4vw;
+    border-radius: 20px;
+}
+
+.inp-range{
+    width: 100%;
 }

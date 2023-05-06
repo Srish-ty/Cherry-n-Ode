@@ -3,6 +3,9 @@ import './styles/Output.styles.css'
 
 export const Output = ({value}) => {
   return (
-    <div className='output-cont'>{value}</div>
+    <div className='output-cont'>
+        <h1 className='out-head'> {value} </h1>
+        
+    </div>
   )
 }
