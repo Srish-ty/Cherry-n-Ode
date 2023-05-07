@@ -1,10 +1,48 @@
 .slider-cont{
+     font-weight: bolder;
     border: 0px solid blue;
-    width: 800px;
+    width: 90%;
+    margin: 2vw 4vw;
     padding: 4vw;
     border-radius: 20px;
 }
 
 .inp-range{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 20px;
+    border-top-right-radius: 100%; border-bottom-right-radius: 100%;
     width: 100%;
+    background-color: pink;
+    cursor: pointer;
 }
+
+@media only screen and (max-width:600px){
+.inp-range{
+  height: 6px;
+}
+}
+
+.inp-range::-webkit-slider-thumb{
+    -webkit-appearance: none; 
+height: 30px;
+width: 30px;
+  background-size: cover;
+   background-image: url("https://images.freeimages.com/fic/images/icons/725/colobrush/256/pink_heart.png");
+}
+
+@media only screen and (max-width:600px) {
+.inp-range::-webkit-slider-thumb{
+    height: 18px;
+  width: 18px;
+}
+}
+
+
+/*
+input[type=range]::-webkit-slider-thumb{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2333/2333050.png') no-repeat;
+
+    https://images.freeimages.com/fic/images/icons/725/colobrush/256/pink_heart.png
+}*/

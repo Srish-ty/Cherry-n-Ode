@@ -6,7 +6,7 @@ export const SliderPage = ({putValue}) => {
     <section className='slider-cont'>
 
         <h1 className='slid-heading'> Timeline :</h1>
-        <input className='inp-range' type='range' min='0' max='36' defaultValue={4} onChange={putValue}/> 
+        <input className='inp-range' type='range' min='0' max='36' defaultValue={4} onChange={putValue} step='0.25' /> 
 
     </section>
   )

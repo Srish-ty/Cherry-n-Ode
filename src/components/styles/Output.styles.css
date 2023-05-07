@@ -1,5 +1,11 @@
 .output-cont{
     border: 0px solid hotpink;
-    padding: 4vw 6vw;
-    border-radius: 20px;
+    padding: 2vw 4vw;
+    border-radius: 25px;
+    box-shadow: 0vw 0vw 2vw 0vw black;
+}
+@media only screen and (max-width:800px){
+.output-cont{
+  font-size: 1.8vw;
+}
 }
