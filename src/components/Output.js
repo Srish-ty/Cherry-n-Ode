@@ -11,8 +11,9 @@ export const Output = ({value}) => {
   return (
     <div className='output-cont'>
         <h1 className='out-head'> 
-         { yr!==4 ? (`year : ${yr}`): "It's Over" } <br/>
-         { mn!==0? `month : ${mn}`: ""}
+         { value<=35 ? (`year : ${yr}`): "It's Over 💔" } <br/>
+         { mn!==0? ( value<=35? `month : ${mn}`:""): "" }
+         
         </h1>
         
     </div>

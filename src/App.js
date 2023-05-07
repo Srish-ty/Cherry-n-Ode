@@ -22,6 +22,8 @@ function App() {
     outp.style.backgroundColor = `rgb(${(g+10)}, 77, 150 )`; outp.style.color = `rgb(${255-g}, 48, 122 )`; outp.style.boxShadow = `0vw 0vw 2vw rgb(${g-30},08, 82)`;
 
     let inp=document.getElementsByClassName('inp-range')[0]; inp.style.backgroundColor=`rgb(${(g)}, 37, 110 )`;
+    let inpval = val*100/36;
+    inp.style.background = `linear-gradient(to right, rgb(${(g+62)}, 107, 180) ${inpval}%, rgb(${(g)}, 37, 110) ${inpval}%)`;
   }
 
   return (

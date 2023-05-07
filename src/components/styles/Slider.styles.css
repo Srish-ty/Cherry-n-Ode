@@ -6,6 +6,13 @@
     padding: 4vw;
     border-radius: 20px;
 }
+@media only screen and (max-width:600px){
+ .slider-cont{
+  padding: 7vw;
+  background-color: #1c203d;
+  margin: 6vw 8vw;
+ } 
+}
 
 .inp-range{
     -webkit-appearance: none;
@@ -14,7 +21,7 @@
     border-radius: 20px;
     border-top-right-radius: 100%; border-bottom-right-radius: 100%;
     width: 100%;
-    background-color: pink;
+    background-image: linear-gradient(to right, #f39cab 11.11%, #8a365c 11.11%);
     cursor: pointer;
 }
 
