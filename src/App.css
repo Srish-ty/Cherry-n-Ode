@@ -5,7 +5,7 @@
   display: flex; flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 1vw; font-family: Papyrus, fantasy;
+  font-size: 1.2vw; font-family: Papyrus, fantasy;
   font-weight: bolder;
   background-color: #111429; color: rgb(149, 123, 139);
 }

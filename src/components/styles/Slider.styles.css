@@ -10,9 +10,9 @@
 }
 @media only screen and (max-width:600px){
  .slider-cont{
-  padding: 7vw;
   background-color: #1c203d;
-  margin: 6vw 8vw;
+  width: 85%;
+  margin: 6vw 10vw;
  } 
 }
 
@@ -40,6 +40,7 @@
 @media only screen and (max-width:600px){
 .inp-range{
   height: 7px;
+  margin: 1vw auto 4vw auto;
 }
 .inp-range::-webkit-slider-thumb{
    -webkit-appearance: none; 
@@ -75,10 +76,12 @@ input[type=range]::-webkit-slider-thumb{
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   border-top-right-radius: 50%;
+
+  
 }
 .slider-cont  .numdays:after{
   background-color: #f495bd;
-  padding: 2vw;
+  padding: 4vw;
   height: 45px; width: 45px;
   position: absolute; 
   left: 50%;
@@ -88,13 +91,19 @@ input[type=range]::-webkit-slider-thumb{
 
 @media only screen and (max-width:600px) {
 .numdays{
-  bottom: 14vw;
-  margin: auto 10vw auto 4vw;
+  bottom: 17vw;
+  height: 75px; width: 75px;
 }  
 }
 
 .txt{
   position: absolute;
-  margin: auto;
+  margin:  auto;
   transform: translateX(-50%) rotate(-45deg);
+  border:0px solid #8a365c;
+}
+@media only screen and (min-width:650px) {
+ .txt{
+  height: auto; width: 100%;
+} 
 }
