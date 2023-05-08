@@ -1,7 +1,7 @@
 .App {
   width: auto;
   height: 90vh;
-  padding: 4vw 4vw; margin-top: 0vw;
+  padding: 3vw 4vw; margin-top: 0vw;
   display: flex; flex-direction: column;
   align-items: center;
   text-align: center;
@@ -12,7 +12,7 @@
 @media only screen and (max-width:800px){
 .App{
   padding: 6vw 4vw;
-  font-size: 2.2vw;
+  font-size: 3vw; font-weight: bold;
 }
 }
 

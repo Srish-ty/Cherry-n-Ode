@@ -1,10 +1,12 @@
 .slider-cont{
+  position: relative;
      font-weight: bolder;
     border: 0px solid blue;
-    width: 90%;
+    width: 90%; height: 30vh;
     margin: 2vw 4vw;
     padding: 4vw;
-    border-radius: 20px;
+    border-radius: 20px; 
+    display: flex; flex-direction: column; justify-content: space-between;
 }
 @media only screen and (max-width:600px){
  .slider-cont{
@@ -17,6 +19,7 @@
 .inp-range{
     -webkit-appearance: none;
     appearance: none;
+    position: relative;
     height: 10px;
     border-radius: 20px;
     border-top-right-radius: 100%; border-bottom-right-radius: 100%;
@@ -25,31 +28,73 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width:600px){
-.inp-range{
-  height: 6px;
-}
-}
 
 .inp-range::-webkit-slider-thumb{
     -webkit-appearance: none; 
-height: 30px;
-width: 30px;
+  height: 30px;
+  width: 30px;
   background-size: cover;
-   background-image: url("https://images.freeimages.com/fic/images/icons/725/colobrush/256/pink_heart.png");
+  background-image: url("https://images.freeimages.com/fic/images/icons/725/colobrush/256/pink_heart.png");
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:600px){
+.inp-range{
+  height: 7px;
+}
 .inp-range::-webkit-slider-thumb{
-    height: 18px;
-  width: 18px;
+   -webkit-appearance: none; 
+    height: 22px;
+    width: 22px;
 }
 }
-
+.inp-range::before{ color: #f495bd; font-weight: bold;
+  content: "Beginning";
+  position: absolute;
+  top: 2vw;
+}
+.inp-range::after{ color: #f495bd; font-weight: bold;
+  content: "3 years";
+  position: absolute;
+  right: 0vw;
+  top: 2vw;
+}
 
 /*
 input[type=range]::-webkit-slider-thumb{
     background-image: url('https://cdn-icons-png.flaticon.com/512/2333/2333050.png') no-repeat;
-
-    https://images.freeimages.com/fic/images/icons/725/colobrush/256/pink_heart.png
 }*/
+
+.numdays{
+  background-color: #f495bd;
+  padding: 2vw;
+  height: 45px; width: 45px;
+  position: absolute;
+  bottom: 7.5vw; left:15%;
+  transform: translateX(-50%) rotate(45deg);
+  border: 2px solid navy;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.slider-cont  .numdays:after{
+  background-color: #f495bd;
+  padding: 2vw;
+  height: 45px; width: 45px;
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+ z-index: -1;
+}
+
+@media only screen and (max-width:600px) {
+.numdays{
+  bottom: 14vw;
+  margin: auto 10vw auto 4vw;
+}  
+}
+
+.txt{
+  position: absolute;
+  margin: auto;
+  transform: translateX(-50%) rotate(-45deg);
+}

@@ -23,12 +23,16 @@ function App() {
 
     let inp=document.getElementsByClassName('inp-range')[0]; inp.style.backgroundColor=`rgb(${(g)}, 37, 110 )`;
     let inpval = val*100/36;
-    inp.style.background = `linear-gradient(to right, rgb(${(g+62)}, 107, 180) ${inpval}%, rgb(${(g)}, 37, 110) ${inpval}%)`;
+    inp.style.background = `linear-gradient(to right, rgb(${(g+62)}, 107, 180) ${inpval-0.25}%, rgb(${(g)}, 37, 110) ${inpval+0.25}%)`; //rgb(${(255-g+15)}, 118, 165)
+
+    let promp=document.getElementsByClassName('numdays')[0]; promp.style.left= val*90/36 +5 +"%" ; 
+    promp.style.borderColor =`rgb(${Math.abs(255-g+10)}, 128, 202 )` ; // `rgb(${Math.abs(255-g+10)}, 128, 202 )`
+    promp.style.backgroundColor=`rgb(${g+20}, 129, 189 )`;
   }
 
   return (
     <div className="App">
-      <SliderPage putValue={changeval} className='slider' bcolor={timing}/>
+      <SliderPage putValue={changeval} className='slider' value={timing}/>
       <Output value={timing}/>
     </div>
   );
