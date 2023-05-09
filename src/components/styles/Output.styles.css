@@ -1,14 +1,34 @@
 .output-cont{
-  font-size: 1.2vw;
+  font-size: 1.8vw;
     border: 0px solid hotpink;
     padding: 2vw 4vw;
     border-radius: 25px;
+    width: 35%;
     box-shadow: 0vw 0vw 2vw 0vw black;
 }
 @media only screen and (max-width:800px){
 .output-cont{
+  width: 50%;
   font-size: 2vw;
-    padding: 4vw 6vw ;
+    padding: 4vw 6vw 4.5vw 6vw ;
   border-radius: 15px;
+}
+}
+
+.piccont{
+  width: 40%; height: auto; margin: auto;
+}
+
+.ourpic{
+  height: 100%; width: 100%;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width:650px) {
+.piccont{
+  width: 70%;
+}
+.ourpic{
+  border-radius: 18px;
 }
 }
