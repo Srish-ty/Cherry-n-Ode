@@ -11,7 +11,7 @@
 @media only screen and (max-width:600px){
  .slider-cont{
   background-color: #1c203d;
-  width: 85%;
+  width: 85%; height: 28vh;
   margin: 6vw 10vw;
  } 
 }

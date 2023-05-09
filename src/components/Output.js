@@ -30,6 +30,9 @@ export const Output = ({value}) => {
         if (value<=2.25){cust='30th'; imsrc=thirtaug;} else if(value<=2.5){cust='31st'; imsrc=laaug;} else{ cust='31st';imsrc=thiroaug} }
       else if(mn===3){
         if (value<=3.25){cust='5th'; imsrc=lsaug;} else if(value<=3.5){cust='6th'; imsrc=sep;} else if(value<=3.75){imsrc=sisep} else{imsrc=sisep} }
+      else if(mn===4){
+        imsrc=secjune;
+      }
 }
 
 
